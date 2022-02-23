@@ -1,0 +1,17 @@
+header {
+    border-bottom: $bg-color;
+    padding: 20px;
+    width: 100%;
+    
+    // brand icon
+    .icon-square {
+        font-size: 20px;
+        color: $primary;
+    }
+    // search
+    .search-input:focus{
+        outline: 2px solid #0048ff;
+        border: none;
+    }
+    
+}
