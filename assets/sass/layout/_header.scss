@@ -1,31 +1,24 @@
 header {
-    border-bottom: $bg-color;
+    border-bottom: 2px solid $bg-color;
     // padding: 20px;
-    height: 80px;
-    width: 100%;
-    
-    // Brand icon
-    .icon-square {
-        font-size: 20px;
-        color: $primary;
-    }
+    height: 92px;
+
     // Brand name
-    .brand-name {
-        width: 80px;   
+    .brand-icon {
+        width: 100px;   
         height: 72px;
+        color: $primary;
+        .icon-square {
+            font-size: 24px;
+        }
     }
-    // search
-    .search-input {
-        width: 280px;
-        height: 34px;
-    }
-    .search-input:focus{
-        outline: 2px solid #0048ff;
-        border: none;
-    }
-    // search-button
-    .search-btn {
-        width: 76px;
-        height: 34px;
+    // Profile section
+    .avatar {
+        padding-right: 40px;
+        .profile-img {
+            height: 40px;
+            border-radius: 50%;
+        }
+
     }
 }

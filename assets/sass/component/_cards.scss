@@ -1,1 +1,52 @@
 // Card styles goes here
+.cards {
+    
+  margin: 0 -12px;
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 25%;
+    margin: 0 12px 10px;
+    padding: 24px;
+    background-color: rgb(255, 255, 255);
+
+    // Icon Box
+  }
+//   .card-1 {
+//     &:hover {
+//       background-color: $primary;
+//       color: white;
+//       .icon-box {
+//         background-color: red;
+//       }
+//     }
+//   }
+}
+// Color classes map
+@each $key,
+$value in $cards {
+  .card-#{$key} {
+    .card-icon-bg {
+      background-color: lighten($value, 30%);
+    }
+    .icon {
+      color: $value;
+    }
+      &:hover {
+        transition: 0.6s all ease-in-out;
+        background-color: $value;
+        color: $white;
+        .card-icon-bg {
+            // transition: 0.5s all ease-in-out;
+          background-color: lighten($value, 8%);
+        }
+        .icon {
+            // transition: 0.3s all ease-in-out;
+            color: white;
+        }
+      }
+    }
+  }
+
+

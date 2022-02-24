@@ -1,19 +1,20 @@
 // Theme colors
 $primary: #438ffe;
-$secondary: #fbde4a;
-
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-);
+$secondary: #f8f8f8;
+$success-primary: #8bc38a;
+$success-secondary:#83bcbd;
+$btn-primary: #438ffe;
+$gray: #989d9e;
+$coral: #fe764b; 
+$white: #ffffff;
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary,
+// );
 
 // Mainly use for UI controls like Buttons
+// Mainly used all over
 
-// Mainly use for Normal Text color
-$gray: #989d9e;
-
-// Used for Alerts and warm colors
-$coral: #fe764b; 
 // Used for Search and other input bg
 $input-bg : #f5f7f9;
 
@@ -24,3 +25,10 @@ $bg-color: #f8f8f8;
 // Dedicated for button text only
 $btn-text-primary: $primary;
 
+// Map
+$cards: (
+  "view": $primary,
+  "product":$success-primary,
+  "user": $primary,
+  "sells": $success-secondary,
+)

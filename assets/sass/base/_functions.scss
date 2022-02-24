@@ -1,1 +1,11 @@
 // Function styles goes here
+
+// For sizes
+$sizes: 20px, 40px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+  }
+}
+

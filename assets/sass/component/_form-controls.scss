@@ -1,1 +1,32 @@
 // Form controls styles goes here
+
+
+    // SEARCH
+    .search-input {
+        width: 280px;
+        height: 34px;
+        border: none;
+        background-color: $secondary;
+    }
+    .search-input:focus{
+        outline: 2px solid $btn-primary;
+        border: none;
+    }
+    // search-button
+    .search-btn {
+        width: 76px;
+        height: 34px;
+        background-color: $btn-primary;
+        color: white;
+        border: none;
+
+    }
+    // search icon position
+    .search {
+        margin-left: 40px;
+        position: relative;
+        .icon-search {
+            @include position ( absolute, 0, auto, auto, 0);
+            padding: 8px;
+        }
+    }

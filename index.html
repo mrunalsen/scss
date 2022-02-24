@@ -12,75 +12,135 @@
 
 <body>
     <!-- MAIN BODY WRAPPER -->
-    <div class="d-flex h-100 flex-column border-temp">
+    <div class="d-flex h-100 flex-column">
         <!-- Header : starts -->
-        <header class="d-flex justify-content-between border-temp">
+        <header class="d-flex justify-content-between w-100">
             <div class="d-flex align-items-center">
                 <!-- Brand name -->
-                <div class="brand-name d-flex align-items-center justify-content-center">
+                <div class="brand-icon d-flex align-items-center justify-content-center">
                     <span class="icon-square"></span>
                 </div>
                 <!-- Searchbar -->
                 <div class="search d-flex">
-                    <div >
-                        <input class="search-input" type="text" placeholder="Search for transaction, item, etc">
+                    <div>
+                        <input class="search-input p-x28" type="text" placeholder="Search for transaction, item, etc">
                         <span class="icon-search"></span>
                     </div>
-                    <button class="search-btn" type="button"><a href="#">Search</a></button>
+                    <button class="search-btn" type="button">Search</button>
                 </div>
             </div>
             <!-- Profile -->
-            <div class="d-flex ">
+            <div class="d-flex profile align-items-center">
                 <!-- Alerts -->
-                <div class="alerts d-flex">
-                    <span class="icon-commenting-o"></span>
-                    <span class="icon-bell"></span>
+                <div class="alerts d-flex p20">
+                    <span class="icon icon-commenting-o p10"></span>
+                    <span class="icon icon-bell p10"></span>
                 </div>
                 <!-- Profile -->
-                <div class="profile">
-                    <figure></figure>
-                    <span class="icon-keyboard_arrow_left"></span>
+                <div class="avatar align-items-center d-flex ">
+                    <figure>
+                        <img class="profile-img" src="assets/img/images/avatar.jpg" alt="avatar">
+                    </figure>
                 </div>
             </div>
         </header>
         <!-- Header : end -->
-        <div class="wrapper d-flex flex-grow-1 border-temp">
+        <div class="wrapper d-flex flex-grow-1">
             <!-- Sidebar : start -->
-            <aside class="d-flex justify-content-between">
-                <nav>
+            <aside class="d-flex flex-column ">
+                <nav class="justify-content-center flex-grow-1 d-flex">
                     <ul>
-                        <li>
-                            <span class="icon-dashboard"></span>
+                        <li class="nav-li">
+                            <span class="icon icon-dashboard"></span>
                         </li>
-                        <li>
-                            <span class="icon-cart"></span>
+                        <li class="nav-li">
+                            <span class="icon icon-cart"></span>
                         </li>
-                        <li>
-                            <span class="icon-file-text"></span>
+                        <li class="nav-li">
+                            <span class="icon icon-file-text"></span>
                         </li>
-                        <li>
-                            <span class="icon-settings"></span>
+                        <li class="nav-li">
+                            <span class="icon icon-settings"></span>
                         </li>
                     </ul>
                 </nav>
-                <nav>
+                <nav class="nav-2 justify-content-center d-flex">
                     <ul>
-                        <li><span class="icon-exclamation-solid"></span></li>
-                        <li><span class="icon-log-out"></span></li>
+                        <li class="nav-li"><span class="icon icon-exclamation-solid"></span></li>
+                        <li class="nav-li"><span class="icon icon-log-out"></span></li>
                     </ul>
                 </nav>
             </aside>
             <!-- Sidebar  : end -->
+
             <!-- MAIN : start -->
-            <main class="border-temp flex-grow-1">
+            <main class="flex-grow-1 p40">
                 <!-- Title -->
                 <h1>Dashboard</h1>
                 <!-- Cards : start -->
-                <section class="cards">
-                    <div class="card-1">card-1</div>
-                    <div class="card-2">card-2</div>
-                    <div class="card-3">card-3</div>
-                    <div class="card-4">card-4</div>
+                <section class="cards d-flex">
+                    <div class="card card-view">
+                        <div class="d-flex flex-column card">
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="icon-box p20 card-icon card-icon-bg">
+                                    <span class="icon-view-show icon"></span>
+                                </div>
+                                <span class="icon-show_chart"></span>
+                            </div>
+                            <h5>Total Views</h5>
+                            <div>
+                                <span>308.402</span>
+                            </div>
+                            <div>
+                                <p>Start from 1 Jan 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-product card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="icon-box p20 card-icon card-icon-bg">
+                                <span class="icon-view-show icon"></span>
+                            </div>
+                            <span class="icon-show_chart"></span>
+                        </div>
+                        <h4>Total Views</h4>
+                        <div>
+                            <span>308.402</span>
+                        </div>
+                        <div>
+                            <p>Start from 1 Jan 2021</p>
+                        </div>
+                    </div>
+                    <div class="card-user card">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="icon-box p20 card-icon card-icon-bg">
+                                <span class="icon-view-show icon"></span>
+                            </div>
+                            <span class="icon-show_chart"></span>
+                        </div>
+                        <h4>Total Views</h4>
+                        <div>
+                            <span>308.402</span>
+                        </div>
+                        <div>
+                            <p>Start from 1 Jan 2021</p>
+                        </div>
+                    </div>
+                    <div class="card-sells card">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="icon-box p20 card-icon card-icon-bg">
+                                <span class="icon-view-show icon"></span>
+                            </div>
+                            <span class="icon-show_chart"></span>
+                        </div>
+                        <h4>Total Views</h4>
+                        <div>
+                            <span>308.402</span>
+                        </div>
+                        <div>
+                            <p>Start from 1 Jan 2021</p>
+                        </div>
+                    </div>
                 </section>
                 <!-- Cards : end -->
 
@@ -88,11 +148,12 @@
                 <section class="d-flex">
                     <!-- Table : start -->
                     <div class="border-temp">
-                        <table>
+                        <table class="overflow-auto">
                             <!-- table header -->
                             <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th></th>
                                     <th>Product Name</th>
                                     <th>Status</th>
                                     <th>Sold</th>
@@ -102,6 +163,9 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
+                                    <td><img class="table-img"
+                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                            alt="product"></td>
                                     <td>News Mobile App UI KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
@@ -109,13 +173,9 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
+                                    <td><img class="table-img"
+                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                            alt="product"></td>
                                     <td>News Mobile App UI KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
@@ -123,6 +183,9 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
+                                    <td><img class="table-img"
+                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                            alt="product"></td>
                                     <td>News Mobile App UI KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
@@ -130,6 +193,29 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
+                                    <td><img class="table-img"
+                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                            alt="product"></td>
+                                    <td>News Mobile App UI KIT f..</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><img class="table-img"
+                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                            alt="product"></td>
+                                    <td>News Mobile App UI KIT f..</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><img class="table-img"
+                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                            alt="product"></td>
                                     <td>News Mobile App UI KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
