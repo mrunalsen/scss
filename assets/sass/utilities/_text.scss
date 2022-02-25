@@ -20,3 +20,26 @@ body {
         color: $primary;
     }
 }
+// Hero texts
+.hero-text {
+    font-weight: 100;
+}
+.hero-number{
+    font-size: 24px;
+    font-weight: 400;
+}
+.cards {
+    .border-bottom {
+        border-bottom: 2px solid $bg-color;
+    }
+    .profit-icon, .loss-icon {
+        font-size: 4rem;
+    }
+    .loss-icon {
+        // color: $danger;
+        transform: scaleX(-1);
+    }
+    .profit-icon {
+        // color: $success-primary;
+    }
+}

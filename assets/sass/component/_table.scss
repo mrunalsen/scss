@@ -1,3 +1,15 @@
 table {
     table-layout: fixed;
+    border-collapse: collapse;
+}
+.product-table {
+    height: 100%;
+    width: 65%;
+    background-color: $white;
+    td {
+        background-color: $input-bg;
+    }
+}
+.graph {
+    width: 35%;
 }
