@@ -29,3 +29,19 @@
         border-bottom-left-radius: $val;
     }
 }
+
+
+// Media query Mixins
+@mixin media-query($size) {
+    @if $size == mobile {
+      @media (max-width: 576px) { @content; }
+    } @else if $size == mobile-wide {
+      @media (max-width: 776) { @content; }
+    } @else if $size == tablet {
+      @media (max-width: 991px) { @content; }
+    } @else if $size == tablet-x {
+      @media (max-width: 1200px) { @content; }
+    } @else if $size == laptop {
+      @media (max-width: 1440px) { @content; }
+    }
+  }

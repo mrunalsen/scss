@@ -1,9 +1,24 @@
 // Main
 main {
-    background-color: $secondary;
+  background-color: $secondary;
+
+  @include media-query(mobile) {
+    background-color: red;
+  }
 }
 // Table image
 table .table-img {
-    height: 20px;
-    width: 20px;
-} 
+  height: 20px;
+  width: 20px;
+}
+.toggle {
+  @include position(absolute, 50%, auto, auto, 0);
+  background-color: $coral;
+}
+
+// @media (min-width: 768px) {
+//     main {
+//         max-width: 97%;
+//         margin: 0 auto;
+//     }
+// }

@@ -1,15 +1,41 @@
-table {
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-.product-table {
-    height: 100%;
-    width: 65%;
-    background-color: $white;
-    td {
-        background-color: $input-bg;
+.table-wrapper {
+    height: 400px;
+    .table {
+        height: 400px;
+        width: 65%;
+    
+        // background-color: $white;
+        table {
+            table-layout: fixed;
+            width: 100%;
+            padding:0 20px;
+            border-collapse: separate;
+            background-color: $white;
+            text-align: left;
+            border-spacing: 0 0.8rem;
+            tbody {
+                tr {
+                    background-color: $secondary;
+                    .status {
+                        color: $primary;
+                    }
+                }
+            }
+            th, td {
+                padding: 10px;
+            }
+            .table-img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    // Graph
+    .graph {
+        width: 35%;
+        margin-left: 20px;
+        background-color: bisque;
     }
 }
-.graph {
-    width: 35%;
-}
+
+

@@ -45,11 +45,14 @@
             </div>
         </header>
         <!-- Header : end -->
-        <div class="wrapper d-flex flex-grow-1">
+        <!-- Main content : start -->
+        <div class=" d-flex flex-grow-1 overflow-hidden">
+            <input type="checkbox" name="checkbox" id="aside" checked>
             <!-- Sidebar : start -->
-            <aside class="d-flex flex-column ">
-                <nav class="justify-content-center flex-grow-1 d-flex">
-                    <ul>
+            <aside class="d-flex flex-column h-100">
+               <div class="flex-grow-1 overflow-hidden">
+                <nav class="nav-1 align-items-center justify-content-between d-flex flex-column overflow-vertical h-100">
+                    <ul class="overflow-auto d-dlex flex-column">
                         <li class="nav-li">
                             <span class="icon icon-dashboard"></span>
                         </li>
@@ -64,19 +67,21 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="nav-2 justify-content-center d-flex">
-                    <ul>
-                        <li class="nav-li"><span class="icon icon-exclamation-solid"></span></li>
-                        <li class="nav-li"><span class="icon icon-log-out"></span></li>
-                    </ul>
-                </nav>
+            </div>
+            <nav class="nav-2 justify-content-center d-flex">
+                <ul>
+                    <li class="nav-li"><span class="icon icon-exclamation-solid"></span></li>
+                    <li class="nav-li"><span class="icon icon-log-out"></span></li>
+                </ul>
+            </nav>
             </aside>
             <!-- Sidebar  : end -->
 
-            <!-- MAIN : start -->
-            <main class="flex-grow-1 p40">
+            <!-- Content: start -->
+            <main class="flex-grow-1 p40 relative overflow-auto">
+                <label for="aside"><span class="icon-keyboard_arrow_right toggle" ></span></label>
                 <!-- Title -->
-                <h1>Dashboard</h1>
+                <h1 class="pb-20">Dashboard</h1>
                 <!-- Cards : start -->
                 <section class="cards d-flex">
                     <div class="card card-view p20">
@@ -153,90 +158,117 @@
                 <!-- Cards : end -->
 
                 <!-- Table & Graph : start -->
-                <section class="d-flex w-100">
+                <section class="d-flex w-100 overflow-hidden table-wrapper pt-10">
                     <!-- Table : start -->
-                    <div class="border-temp product-table">
-                        <table class="d-flex flex-column flex w-100">
+                    <div class="table d-dlex flex-column">
+                        <div class="d-flex flex-column overflow-hidden h-100">
                             <!-- table header -->
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th></th>
-                                    <th>Product Name</th>
-                                    <th>Status</th>
-                                    <th>Sold</th>
-                                    <th>View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img class="table-img"
-                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                            alt="product"></td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><img class="table-img"
-                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                            alt="product"></td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td><img class="table-img"
-                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                            alt="product"></td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td><img class="table-img"
-                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                            alt="product"></td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td><img class="table-img"
-                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                            alt="product"></td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td><img class="table-img"
-                                            src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                            alt="product"></td>
-                                    <td>News Mobile App UI KIT f..</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                           <div>
+                                <table>
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th></th>
+                                        <th>Product Name</th>
+                                        <th>Status</th>
+                                        <th>Sold</th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
+                               </table>
+                           </div>
+                            <div  class="table-body flex-grow-1 overflow-vertical">
+                                <table>
+                                    <tbody >
+                                        <tr>
+                                            <td>1</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td><img class="table-img"
+                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
+                                                    alt="product"></td>
+                                            <td>News Mobile App UI KIT f..</td>
+                                            <td class="status">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                     <!-- Table : end -->
 
                     <!-- Graph : start -->
                     <div class="graph border-temp d-dlex">
-                        Graph
                     </div>
                     <!-- Graph : end -->
                 </section>

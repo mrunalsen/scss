@@ -68,10 +68,7 @@ body {
 .d-grid {
     display: grid;
 }
-
-.position-relative {
-    position: relative;
-}
+// OVERFLOW
 
 .overflow-hidden {
     overflow: hidden;
@@ -200,4 +197,7 @@ body {
     padding-top: 28px;
     padding-bottom: 28px;
 }
-// Commonly used
+// Positions
+.relative {
+    position: relative;
+}

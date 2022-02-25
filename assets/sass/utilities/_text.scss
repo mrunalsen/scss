@@ -36,10 +36,10 @@ body {
         font-size: 4rem;
     }
     .loss-icon {
-        // color: $danger;
+        color: $danger;
         transform: scaleX(-1);
     }
     .profit-icon {
-        // color: $success-primary;
+        color: $success-primary;
     }
 }
