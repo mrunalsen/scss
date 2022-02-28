@@ -1,41 +1,76 @@
 .table-wrapper {
+  height: 400px;
+  
+  .table {
     height: 400px;
-    .table {
-        height: 400px;
-        width: 65%;
-    
-        // background-color: $white;
-        table {
-            table-layout: fixed;
-            width: 100%;
-            padding:0 20px;
-            border-collapse: separate;
-            background-color: $white;
-            text-align: left;
-            border-spacing: 0 0.8rem;
-            tbody {
-                tr {
-                    background-color: $secondary;
-                    .status {
-                        color: $primary;
-                    }
-                }
-            }
-            th, td {
-                padding: 10px;
-            }
-            .table-img {
-                width: 40px;
-                height: 40px;
-            }
+    width: 65%;
+    @include media-query(tablet-x) {
+        width: 100%;
+      }
+      
+    // background-color: $white;
+    table {
+      table-layout: fixed;
+      width: 100%;
+      padding: 0 20px;
+      border-collapse: separate;
+      background-color: $white;
+      text-align: left;
+      border-spacing: 0 0.8rem;
+      
+      
+      tbody {
+        tr {
+          background-color: $secondary;
+          .status {
+            color: $primary;
+          }
         }
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      .table-img {
+        width: 40px;
+        height: 40px;
+      }
     }
-    // Graph
-    .graph {
-        width: 35%;
-        margin-left: 20px;
-        background-color: bisque;
-    }
+  }
 }
 
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
 
+  .table-wrapper .table table {
+    padding: 0;
+  }
+	table, thead, tbody, th, td, tr { 
+		display: block;
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+}

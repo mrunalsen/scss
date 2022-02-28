@@ -1,41 +1,71 @@
 // Card styles goes here
 .cards {
-    
   margin: 0 -12px;
-  .card {
+  .card-container {
     width: 25%;
-    margin: 0 12px 10px;
+    // margin: 0 12px 10px;
+    padding: 0 12px;
+    @include media-query(tablet-x) {
+      width: 25%;
+    }
+    @include media-query(tablet) {
+      width: 50%;
+      padding-bottom: 20px;
+    }
+
+    @include media-query(mobile) {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    @include media-query(mobile-min) {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    .card {
+      padding: 1rem;
+      background-color: $white;
+    }
   }
 }
 
 // Color classes map
-@each $key,
-$value in $cards {
-  .card-#{$key} {
-    background-color: $white;
-    .card-icon-bg {
-      background-color: lighten($value, 30%);
-    }
-    .icon {
-      color: $value;
-    }
+.card-container {
+  @each $key, $value in $cards {
+    .card-#{$key} {
+      // background-color: $white;
+      .card-icon-bg {
+        background-color: lighten($value, 30%);
+      }
+      .icon {
+        color: $value;
+      }
       &:hover {
         transition: 0.3s all ease-in-out;
         background-color: $value;
         color: $white;
-        .profit-icon, .loss-icon {
+        .profit-icon,
+        .loss-icon {
           color: white;
         }
         .card-icon-bg {
-            transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
           background-color: lighten($value, 8%);
         }
         .icon {
-            transition: 0.3s all ease-in-out;
-            color: white;
+          transition: 0.3s all ease-in-out;
+          color: white;
         }
       }
     }
   }
+}
 
-
+// @media (max-width: 768px) {
+//   .cards {
+//     margin: 0 -12px;
+//     .card {
+//       width: 50%;
+//       margin: 0 12px 10px;
+//     }
+//   }
+// }

@@ -30,17 +30,24 @@
                 </div>
             </div>
             <!-- Profile -->
-            <div class="d-flex profile align-items-center">
-                <!-- Alerts -->
-                <div class="alerts d-flex p20">
-                    <span class="icon icon-commenting-o p10"></span>
-                    <span class="icon icon-bell p10"></span>
-                </div>
-                <!-- Profile -->
-                <div class="avatar align-items-center d-flex ">
-                    <figure>
-                        <img class="profile-img" src="assets/img/images/avatar.jpg" alt="avatar">
-                    </figure>
+            <input type="checkbox" name="profile" id="profile">
+            <div class="d-flex  align-items-center dropdown">
+                <label for="profile" class="drop-arrow">
+                    <span class="icon-keyboard_arrow_right"></span>
+                </label>
+                <div class="d-flex profile align-items-center ">
+                    <!-- Alerts -->
+                    <div class="alerts d-flex p20">
+                        <span class="icon icon-commenting-o p10"></span>
+                        <span class="icon icon-bell p10"></span>
+                    </div>
+                    <!-- Profile -->
+                    <div class="avatar align-items-center d-flex ">
+                        <figure>
+                            <img class="profile-img" src="assets/img/images/avatar.jpg" alt="avatar">
+                        </figure>
+                        <span class="icon-keyboard_arrow_right"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -50,42 +57,43 @@
             <input type="checkbox" name="checkbox" id="aside" checked>
             <!-- Sidebar : start -->
             <aside class="d-flex flex-column h-100">
-               <div class="flex-grow-1 overflow-hidden">
-                <nav class="nav-1 align-items-center justify-content-between d-flex flex-column overflow-vertical h-100">
-                    <ul class="overflow-auto d-dlex flex-column">
-                        <li class="nav-li">
-                            <span class="icon icon-dashboard"></span>
-                        </li>
-                        <li class="nav-li">
-                            <span class="icon icon-cart"></span>
-                        </li>
-                        <li class="nav-li">
-                            <span class="icon icon-file-text"></span>
-                        </li>
-                        <li class="nav-li">
-                            <span class="icon icon-settings"></span>
-                        </li>
+                <div class="flex-grow-1 overflow-hidden">
+                    <nav
+                        class="nav-1 align-items-center justify-content-between d-flex flex-column overflow-vertical h-100">
+                        <ul class="overflow-auto d-dlex flex-column">
+                            <li class="nav-li">
+                                <span class="icon icon-dashboard"></span>
+                            </li>
+                            <li class="nav-li">
+                                <span class="icon icon-cart"></span>
+                            </li>
+                            <li class="nav-li">
+                                <span class="icon icon-file-text"></span>
+                            </li>
+                            <li class="nav-li">
+                                <span class="icon icon-settings"></span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="nav-2 justify-content-center d-flex overflow-hidden">
+                    <ul>
+                        <li class="nav-li"><span class="icon icon-exclamation-solid"></span></li>
+                        <li class="nav-li"><span class="icon icon-log-out"></span></li>
                     </ul>
                 </nav>
-            </div>
-            <nav class="nav-2 justify-content-center d-flex">
-                <ul>
-                    <li class="nav-li"><span class="icon icon-exclamation-solid"></span></li>
-                    <li class="nav-li"><span class="icon icon-log-out"></span></li>
-                </ul>
-            </nav>
             </aside>
             <!-- Sidebar  : end -->
 
             <!-- Content: start -->
-            <main class="flex-grow-1 p40 relative overflow-auto">
-                <label for="aside"><span class="icon-keyboard_arrow_right toggle" ></span></label>
+            <main class="flex-grow-1 p40 overflow-auto">
+                <label for="aside"><span class="icon-keyboard_arrow_left toggle"></span></label>
                 <!-- Title -->
                 <h1 class="pb-20">Dashboard</h1>
                 <!-- Cards : start -->
-                <section class="cards d-flex">
-                    <div class="card card-view p20">
-                        <div class="d-flex flex-column">
+                <div class="cards d-flex flex-wrap">
+                    <div class="card-container p20 ">
+                        <div class="card card-view d-flex flex-column flex-wrap">
                             <div class="d-flex justify-content-between align-items-center pb-24">
                                 <div class="icon-box p20 card-icon card-icon-bg">
                                     <span class="icon-view-show icon"></span>
@@ -103,88 +111,92 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-product card p20">
-                        <div class="d-flex justify-content-between align-items-center pb-24">
-                            <div class="icon-box p20 card-icon card-icon-bg">
-                                <span class="icon-view-show icon"></span>
+                    <div class="card-container p20">
+                        <div class=" card card-product d-flex flex-column flex-wrap">
+                            <div class="d-flex justify-content-between align-items-center pb-24">
+                                <div class="icon-box p20 card-icon card-icon-bg">
+                                    <span class="icon-view-show icon"></span>
+                                </div>
+                                <span class="icon-show_chart profit-icon"></span>
                             </div>
-                            <span class="icon-show_chart loss-icon"></span>
-                        </div>
-                        <div class="pb-20">
-                            <span class="hero-text">Total Products</span>
-                        </div>
-                        <div class="pb-28 border-bottom">
-                            <span class="hero-number">10.820</span>
-                        </div>
-                        <div class="pt-20">
-                            <span class="hero-text">+ Add New Product</span>
+                            <div class="pb-20">
+                                <span class="hero-text">Total Views</span>
+                            </div>
+                            <div class=" pb-28 border-bottom">
+                                <span class="hero-number">308.402</span>
+                            </div>
+                            <div class="pt-20">
+                                <span class="hero-text">Start from 1 Jan 2021</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-user card p20">
-                        <div class="d-flex justify-content-between align-items-center  pb-24">
-                            <div class="icon-box p20 card-icon card-icon-bg">
-                                <span class="icon-view-show icon"></span>
+                    <div class="  card-container p20">
+                        <div class=" card card-user d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center pb-24">
+                                <div class="icon-box p20 card-icon card-icon-bg">
+                                    <span class="icon-view-show icon"></span>
+                                </div>
+                                <span class="icon-show_chart profit-icon"></span>
                             </div>
-                            <span class="icon-show_chart profit-icon"></span>
-                        </div>
-                        <div class="pb-20">
-                            <span class="hero-text">Total Users</span>
-                        </div>
-                        <div class="pb-28 border-bottom">
-                            <span class="hero-number">8.425</span>
-                        </div>
-                        <div class="pt-20">
-                            <span class="hero-text">New user noted every week</span>
+                            <div class="pb-20">
+                                <span class="hero-text">Total Views</span>
+                            </div>
+                            <div class=" pb-28 border-bottom">
+                                <span class="hero-number">308.402</span>
+                            </div>
+                            <div class="pt-20">
+                                <span class="hero-text">Start from 1 Jan 2021</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-sells card p20">
-                        <div class="d-flex justify-content-between align-items-center  pb-24">
-                            <div class="icon-box p20 card-icon card-icon-bg">
-                                <span class="icon-view-show icon"></span>
+                    <div class="  card-container p20">
+                        <div class=" card card-sells d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center pb-24">
+                                <div class="icon-box p20 card-icon card-icon-bg">
+                                    <span class="icon-view-show icon"></span>
+                                </div>
+                                <span class="icon-show_chart profit-icon"></span>
                             </div>
-                            <span class="icon-show_chart profit-icon"></span>
-                        </div>
-                        <div class="pb-20">
-                            <span class="hero-text">Total Sells</span>
-                        </div>
-                        <div class="pb-28 border-bottom">
-                            <span class="hero-number">1.028.623</span>
-                        </div>
-                        <div class="pt-20">
-                            <span class="hero-text">Start from 1 Jan 2021</span>
+                            <div class="pb-20">
+                                <span class="hero-text">Total Views</span>
+                            </div>
+                            <div class=" pb-28 border-bottom">
+                                <span class="hero-number">308.402</span>
+                            </div>
+                            <div class="pt-20">
+                                <span class="hero-text">Start from 1 Jan 2021</span>
+                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
                 <!-- Cards : end -->
 
                 <!-- Table & Graph : start -->
-                <section class="d-flex w-100 overflow-hidden table-wrapper pt-10">
+                <section class="d-flex  table-wrapper mt-20 flex-wrap w-100">
                     <!-- Table : start -->
                     <div class="table d-dlex flex-column">
                         <div class="d-flex flex-column overflow-hidden h-100">
                             <!-- table header -->
-                           <div>
+                            <div>
                                 <table>
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th></th>
-                                        <th>Product Name</th>
-                                        <th>Status</th>
-                                        <th>Sold</th>
-                                        <th>View</th>
-                                    </tr>
-                                </thead>
-                               </table>
-                           </div>
-                            <div  class="table-body flex-grow-1 overflow-vertical">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th></th>
+                                            <th>Product Name</th>
+                                            <th>Status</th>
+                                            <th>Sold</th>
+                                            <th>View</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table-body flex-grow-1 overflow-vertical">
                                 <table>
-                                    <tbody >
+                                    <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -192,9 +204,7 @@
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -202,9 +212,7 @@
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -212,9 +220,7 @@
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -222,9 +228,7 @@
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -232,9 +236,7 @@
                                         </tr>
                                         <tr>
                                             <td>6</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -242,9 +244,7 @@
                                         </tr>
                                         <tr>
                                             <td>7</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -252,9 +252,7 @@
                                         </tr>
                                         <tr>
                                             <td>8</td>
-                                            <td><img class="table-img"
-                                                    src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg"
-                                                    alt="product"></td>
+                                            <td><img class="table-img" src="assets/img/images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="product"></td>
                                             <td>News Mobile App UI KIT f..</td>
                                             <td class="status">Active</td>
                                             <td>10</td>
@@ -268,7 +266,8 @@
                     <!-- Table : end -->
 
                     <!-- Graph : start -->
-                    <div class="graph border-temp d-dlex">
+                    <div class="graph-container border-temp d-dlex">
+                        <div class="graph"></div>
                     </div>
                     <!-- Graph : end -->
                 </section>

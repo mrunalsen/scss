@@ -4,6 +4,12 @@ aside {
   background-color: $white;
   transition: 0.4s all;
   overflow-x: hidden;
+  & ~ main .icon-keyboard_arrow_right {
+    transform: translateX(100px);
+  }
+  @include media-query(mobile) {
+    position: absolute;
+  }
 }
 .nav-li {
   // height: 92px;
@@ -13,23 +19,32 @@ aside {
 .nav-2 {
   padding-bottom: 80px;
 }
-input[type="checkbox"] {
+
+// SIDEBAR
+#aside {
   display: none;
 }
-
-input[type="checkbox"]:checked {
+#aside:checked {
   & ~ aside {
     flex: 0 0 0;
     transform: translateX(-100%);
   }
-  & ~ main .icon-keyboard_arrow_right {
-    transform: rotate(0deg);
+  
+   & ~main .toggle {
+    left: 0;
+    transform: rotate(180deg);
   }
 }
 
+
+// Sidebar Toggle
 .toggle {
-    transform: rotate(180deg);
-    transition: 0.4s all;
+    @include position(absolute, 50%, auto, auto, 100px);
+    background-color: $white;
+    border-radius: 50%;
+    border: 0.5px solid $gray;
+    transition: 0.4s all;  
+    cursor: pointer;
 }
 
 // #aside {
